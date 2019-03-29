@@ -15,5 +15,11 @@ public class PrintOneTest {
 	public void secondPrint() {
 		System.out.println("Esta es la segunda impresión");
 	}
+	
+	@Test
+	
+	public void somethingToPrint() {
+		System.out.println("Find me somebody to print");
+	}
 
 }
