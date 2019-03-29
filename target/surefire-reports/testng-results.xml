@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="33" started-at="2019-03-29T13:29:31Z" finished-at="2019-03-29T13:29:32Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="33" started-at="2019-03-29T13:29:31Z" finished-at="2019-03-29T13:29:32Z">
+      <class name="com.automation.app.PrintOneTest">
+        <test-method status="PASS" signature="firstPrint()[pri:0, instance:com.automation.app.PrintOneTest@59a6e353]" name="firstPrint" duration-ms="3" started-at="2019-03-29T13:29:31Z" finished-at="2019-03-29T13:29:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPrint -->
+        <test-method status="PASS" signature="secondPrint()[pri:0, instance:com.automation.app.PrintOneTest@59a6e353]" name="secondPrint" duration-ms="0" started-at="2019-03-29T13:29:32Z" finished-at="2019-03-29T13:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondPrint -->
+      </class> <!-- com.automation.app.PrintOneTest -->
+      <class name="com.automation.app.PrintTwoTest">
+        <test-method status="PASS" signature="fourthPrint()[pri:0, instance:com.automation.app.PrintTwoTest@7a0ac6e3]" name="fourthPrint" duration-ms="0" started-at="2019-03-29T13:29:32Z" finished-at="2019-03-29T13:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourthPrint -->
+        <test-method status="PASS" signature="thirdPrint()[pri:0, instance:com.automation.app.PrintTwoTest@7a0ac6e3]" name="thirdPrint" duration-ms="0" started-at="2019-03-29T13:29:32Z" finished-at="2019-03-29T13:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdPrint -->
+      </class> <!-- com.automation.app.PrintTwoTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
