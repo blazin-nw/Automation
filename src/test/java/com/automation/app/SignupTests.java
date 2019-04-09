@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 
 import com.automation.driver.MyDriver;
 import com.pages.app.Home;
+import com.pages.app.RegisterPage;
+
+import junit.framework.Assert;
 
 public class SignupTests extends BaseTest {
 	
@@ -20,18 +23,9 @@ public class SignupTests extends BaseTest {
 		
 		Home home = getHomePage();
 		home.accessSignupPage();	
-//		Actions a = new Actions(home.getDriver());
-//		a.moveToElement(driver.findElement(By.id("ctl00_HyperLinkLogin"))).build().perform();
-//		a.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'SpiceClub Members')]"))).build().perform();
-//		driver.findElement(By.xpath("//a[contains(text(),'Sign up')]")).click();
-		
-		
-//		Actions a = new Actions(myDriver.getDriver());
-//		a.moveToElement(myDriver.getDriver().findElement(By.id("ctl00_HyperLinkLogin"))).build().perform();
-//		a.moveToElement(myDriver.getDriver().findElement(By.xpath("//a[contains(text(),'SpiceClub Members')]"))).build().perform();
-//		myDriver.getDriver().findElement(By.xpath("//a[contains(text(),'Sign up')]")).click();
-//		Thread.sleep(6000);
-		
+		RegisterPage register = getRegister();
+		//Assert.assertEquals(register.getPageTitle(), "SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets");
+		System.out.println(register.getPageTitle());
 	}
 
 }

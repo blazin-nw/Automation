@@ -34,7 +34,7 @@ public class Home extends BasePage {
 	@FindBy(id="highlight-addons")
 	private WebElement addonsLink;
 	
-	@FindBy(xpath="//a[@href='https://book.spicejet.com/Login.aspx']")
+	@FindBy(xpath="//a[contains(text(),'Sign up')]")
 	private WebElement memberLogin;
 	
 	
@@ -42,13 +42,9 @@ public class Home extends BasePage {
 		return wait;	
 	}
 	
-	public void accessSignupPage() {	
+	public  void accessSignupPage() {	
 		Actions a = new Actions(getDriver());
-		a.moveToElement(hyperlinkLogin).pause(Duration.ofSeconds(3)).moveToElement(spiceclubmembersLink).pause(Duration.ofSeconds(3)).moveToElement(memberLogin).build().perform();
-		//WebDriverWait wait = new WebDriverWait(getDriver(),10);
-		//wait.until(ExpectedConditions.elementToBeClickable(spiceclubmembersLink));
-		//a.moveToElement(memberLogin).build().perform();
-//		signupLink.click();
+		a.moveToElement(hyperlinkLogin).pause(Duration.ofSeconds(2)).moveToElement(spiceclubmembersLink).pause(Duration.ofSeconds(2)).click(memberLogin).build().perform();
 	}
 	
 	public WebElement getLoginLocator() {
