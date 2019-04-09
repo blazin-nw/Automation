@@ -7,9 +7,9 @@ public class BasePage {
 	
 	private WebDriver driver;
 	
-	public BasePage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public BasePage(WebDriver pdriver) {
+		PageFactory.initElements(pdriver, this);
+		driver = pdriver ;
 	}
 	
 	protected WebDriver getDriver() {

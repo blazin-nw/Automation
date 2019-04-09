@@ -1,15 +1,15 @@
 package com.automation.app;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import com.automation.driver.MyDriver;
 import com.pages.app.Home;
 
-public abstract class TestBase {
+public abstract class BaseTest {
 	
 	MyDriver myDriver;
-	
 	private Home home;
 	
 	@BeforeSuite(alwaysRun=true)
@@ -28,5 +28,4 @@ public abstract class TestBase {
 	public Home getHomePage() {
 		return home;
 	}
-	
 }
