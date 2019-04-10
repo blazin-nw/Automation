@@ -34,4 +34,6 @@ public abstract class BaseTest {
 	public RegisterPage getRegister() {
 		return register;
 	}
+	
+	
 }

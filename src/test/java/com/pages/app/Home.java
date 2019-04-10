@@ -42,9 +42,10 @@ public class Home extends BasePage {
 		return wait;	
 	}
 	
-	public  void accessSignupPage() {	
+	public RegisterPage accessSignupPage() {	
 		Actions a = new Actions(getDriver());
 		a.moveToElement(hyperlinkLogin).pause(Duration.ofSeconds(2)).moveToElement(spiceclubmembersLink).pause(Duration.ofSeconds(2)).click(memberLogin).build().perform();
+		return new RegisterPage(getDriver());
 	}
 	
 	public WebElement getLoginLocator() {

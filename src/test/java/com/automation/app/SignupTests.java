@@ -22,10 +22,9 @@ public class SignupTests extends BaseTest {
 	public void reachSignupPage() throws InterruptedException {
 		
 		Home home = getHomePage();
-		home.accessSignupPage();	
-		RegisterPage register = getRegister();
-		//Assert.assertEquals(register.getPageTitle(), "SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets");
-		System.out.println(register.getPageTitle());
+		RegisterPage register = home.accessSignupPage();	
+		Assert.assertEquals(register.getPageTitle(),"Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines");
+ 		System.out.print(register.getPageTitle());
 	}
 
 }
