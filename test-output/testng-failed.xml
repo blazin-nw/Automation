@@ -6,9 +6,9 @@
     <classes>
       <class name="com.automation.app.SignupTests">
         <methods>
-          <include name="reachSignupPage"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
+          <include name="validateRequiredFields"/>
         </methods>
       </class> <!-- com.automation.app.SignupTests -->
     </classes>

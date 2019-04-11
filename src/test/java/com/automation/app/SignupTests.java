@@ -19,12 +19,22 @@ public class SignupTests extends BaseTest {
 	WebDriverWait wait;
 	
 	@Test
-	public void reachSignupPage() throws InterruptedException {
+	public void reachSignupPage() {
 		
 		Home home = getHomePage();
 		RegisterPage register = home.accessSignupPage();	
 		Assert.assertEquals(register.getPageTitle(),"Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines");
  		System.out.print(register.getPageTitle());
+ 		
+	}
+	
+	@Test
+	
+	public void validateRequiredFields() {
+		RegisterPage register = getRegister();
+		register.clickSubmit();
+		System.out.println(myDriver.getDriver().switchTo().alert().getText());
+		myDriver.getDriver().switchTo().alert().accept();
 	}
 
 }

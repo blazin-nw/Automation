@@ -3,6 +3,7 @@ package com.pages.app;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegisterPage extends BasePage {
 	
@@ -24,6 +25,7 @@ public class RegisterPage extends BasePage {
 	}
 	
 	public void clickSubmit() {
+		getWait().until(ExpectedConditions.elementToBeClickable(submitButton));
 		submitButton.click();
 	}
 
