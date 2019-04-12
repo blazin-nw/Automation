@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11506" started-at="2019-04-12T13:26:19Z" finished-at="2019-04-12T13:26:31Z">
+  <suite name="Suite" duration-ms="11737" started-at="2019-04-12T21:02:21Z" finished-at="2019-04-12T21:02:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11506" started-at="2019-04-12T13:26:19Z" finished-at="2019-04-12T13:26:31Z">
-      <class name="com.automation.app.SignupTests2">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.app.SignupTests2@42d80b78]" name="beforeSuite" is-config="true" duration-ms="11114" started-at="2019-04-12T13:26:08Z" finished-at="2019-04-12T13:26:19Z">
+    <test name="Test" duration-ms="11737" started-at="2019-04-12T21:02:21Z" finished-at="2019-04-12T21:02:32Z">
+      <class name="com.automation.app.SearchFlightsTests">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.app.SearchFlightsTests@68c4039c]" name="beforeSuite" is-config="true" duration-ms="22067" started-at="2019-04-12T21:01:59Z" finished-at="2019-04-12T21:02:21Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="reachSignupPage()[pri:0, instance:com.automation.app.SignupTests2@42d80b78]" name="reachSignupPage" duration-ms="11235" started-at="2019-04-12T13:26:19Z" finished-at="2019-04-12T13:26:30Z">
+        <test-method status="PASS" signature="searchFlight()[pri:0, instance:com.automation.app.SearchFlightsTests@68c4039c]" name="searchFlight" duration-ms="11723" started-at="2019-04-12T21:02:21Z" finished-at="2019-04-12T21:02:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reachSignupPage -->
-        <test-method status="PASS" signature="validateRequiredFields()[pri:0, instance:com.automation.app.SignupTests2@42d80b78]" name="validateRequiredFields" duration-ms="231" started-at="2019-04-12T13:26:30Z" finished-at="2019-04-12T13:26:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateRequiredFields -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.app.SignupTests2@42d80b78]" name="afterSuite" is-config="true" duration-ms="1273" started-at="2019-04-12T13:26:31Z" finished-at="2019-04-12T13:26:32Z">
+        </test-method> <!-- searchFlight -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.app.SearchFlightsTests@68c4039c]" name="afterSuite" is-config="true" duration-ms="588" started-at="2019-04-12T21:02:32Z" finished-at="2019-04-12T21:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.automation.app.SignupTests2 -->
+      </class> <!-- com.automation.app.SearchFlightsTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

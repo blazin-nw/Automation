@@ -1,6 +1,7 @@
 package com.automation.app;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -11,8 +12,9 @@ import com.pages.app.RegisterPage;
 public abstract class BaseTest {
 	
 	MyDriver myDriver;
+	
 	private Home home;
-	private RegisterPage register;
+	private RegisterPage register; 
 	
 	@BeforeSuite(alwaysRun=true)
 	@Parameters({"browser"})
@@ -25,7 +27,6 @@ public abstract class BaseTest {
 		public void afterSuite() {
 			home.dispose();
 		}
-	
 
 	public Home getHomePage() {
 		return home;

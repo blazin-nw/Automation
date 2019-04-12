@@ -4,13 +4,13 @@
   <parameter name="browser" value="Chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.automation.app.SignupTests">
+      <class name="com.automation.app.SearchFlightsTests">
         <methods>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
-          <include name="validateRequiredFields"/>
+          <include name="searchFlight"/>
         </methods>
-      </class> <!-- com.automation.app.SignupTests -->
+      </class> <!-- com.automation.app.SearchFlightsTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
