@@ -4,7 +4,7 @@
 <parameter name="browser" value="Chrome"/>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.automation.app.SignupTests"/>
+      <class name="com.automation.app.SignupTests2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

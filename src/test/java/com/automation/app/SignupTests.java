@@ -21,8 +21,9 @@ public class SignupTests extends BaseTest {
 	@Test
 	public void reachSignupPage() {
 		
-		Home home = getHomePage();
-		RegisterPage register = home.accessSignupPage();	
+		Home home = new Home(myDriver.getDriver());
+		home.accessSignupPage();
+		RegisterPage register = new RegisterPage(myDriver.getDriver());	
 		Assert.assertEquals(register.getPageTitle(),"Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines");
  		System.out.print(register.getPageTitle());
  		
@@ -31,10 +32,9 @@ public class SignupTests extends BaseTest {
 	@Test
 	
 	public void validateRequiredFields() {
-		RegisterPage register = getRegister();
+		RegisterPage register = new RegisterPage(myDriver.getDriver());
 		register.clickSubmit();
-		System.out.println(myDriver.getDriver().switchTo().alert().getText());
+		System.out.println("\n" + myDriver.getDriver().switchTo().alert().getText());
 		myDriver.getDriver().switchTo().alert().accept();
 	}
-
 }
