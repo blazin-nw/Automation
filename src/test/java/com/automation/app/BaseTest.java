@@ -7,14 +7,13 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import com.automation.driver.MyDriver;
 import com.pages.app.Home;
-import com.pages.app.RegisterPage;
+
 
 public abstract class BaseTest {
 	
-	MyDriver myDriver;
 	
+	MyDriver myDriver;
 	private Home home;
-	private RegisterPage register; 
 	
 	@BeforeSuite(alwaysRun=true)
 	@Parameters({"browser"})
@@ -32,9 +31,6 @@ public abstract class BaseTest {
 		return home;
 	}
 	
-	public RegisterPage getRegister() {
-		return register;
 	}
 	
 	
-}

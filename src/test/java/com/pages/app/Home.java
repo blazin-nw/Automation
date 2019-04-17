@@ -1,7 +1,9 @@
 package com.pages.app;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,87 +20,107 @@ public class Home extends BasePage {
 	
 	public Home(WebDriver driver) {
 		super(driver);
-		driver.get("https://www.spicejet.com/");
+		driver.get("https://www.travelocity.com/");
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver,10); 
 	}
 	
-	@FindBy(id="ctl00_HyperLinkLogin")
-	private WebElement hyperlinkLogin;
+	@FindBy(id="tab-flight-tab-hp")
+	private WebElement flightsButton;
 
-	@FindBy(xpath="//a[contains(text(),'SpiceClub Members')]")
-	private WebElement spiceclubmembersLink;
-	
-	@FindBy(xpath="//a[contains(text(),'Sign up')]")
-	private WebElement signupLink;
-	
-	@FindBy(id="highlight-addons")
-	private WebElement addonsLink;
-	
-	@FindBy(xpath="//a[contains(text(),'Sign up')]")
-	private WebElement memberLogin;
-	
-	//-----------------Search Flights ---------------------
-	@FindBy(id="ctl00_mainContent_ddl_originStation1_CTXT")
-	private WebElement departureCity;
-	
-	@FindBy(id="ctl00_mainContent_ddl_destinationStation1_CTXT")
-	private WebElement arrivalCity;
-	
-	@FindBy(id="ctl00_mainContent_view_date1")
-	private WebElement departDate;
-	
-	@FindBy(id="divpaxinfo")
-	private WebElement passengers;
-	
-	@FindBy(xpath="//a[@value='BKK']")
-	private WebElement suggestedBangkok;
-	
-	@FindBy(xpath="//a[@value='DXB']")
-	private WebElement suggestedDubai;
-	
-	public WebElement departureCity() {
-		return departureCity;
+	public WebElement flightsButton() {
+		return flightsButton;
 	}
 	
-	public WebElement arrivalCity() {
-		return arrivalCity;
+	@FindBy(css="#flight-origin-hp-flight")
+	private WebElement flyingFromInput;
+	
+	public WebElement flyingFromInput() {
+		return flyingFromInput;
 	}
 	
-	public WebElement suggestedBangkok() {
-		return suggestedBangkok;
+	@FindBy(css="#flight-destination-hp-flight")
+	private WebElement flyingToInput;
+	
+	public WebElement flyingToInput() {
+		return flyingToInput;
 	}
 	
-	public WebElement suggestedDubai() {
-		return suggestedDubai;
+	@FindBy(id="flight-departing-hp-flight")
+	private WebElement departingDateSelector;
+	
+	public WebElement departingDateSelector() {
+		return departingDateSelector;
 	}
 	
-	public WebElement departDate() {
-		return departDate;
+	@FindBy(xpath="//button[@class='datepicker-paging datepicker-next btn-paging btn-secondary next']")
+	private WebElement nextButtonCalendar;
+	
+	public WebElement nextButtonCalendar() {
+		return nextButtonCalendar;
+	}
+	
+	@FindBy(xpath="//tr[2]/td[6]/button")
+	private WebElement departing;
+	
+	public WebElement departing() {
+		return departing;
+	}
+	
+	@FindBy(id="flight-returning-hp-flight")
+	private WebElement returningSelector;
+	
+	public WebElement returningSelector() {
+		return returningSelector;
 	}
 	
 	
+	@FindBy(xpath="//div[3]//table[1]//tbody[1]//tr[3]//td[2]//button[1]")
+	private WebElement returning;
 	
-	
-	
-	
-	
-	
-	//--------------End of Search Flights ---------------
-	
-	
-	public WebDriverWait getWait() {
-		return wait;	
+	public WebElement returning() {
+		return returning;
 	}
 	
-	public RegisterPage accessSignupPage() {	
-		Actions a = new Actions(getDriver());
-		a.moveToElement(hyperlinkLogin).pause(Duration.ofSeconds(2)).moveToElement(spiceclubmembersLink).pause(Duration.ofSeconds(2)).click(memberLogin).build().perform();
-		return new RegisterPage(getDriver());
+	@FindBy(id="flight-adults-hp-flight")
+	private WebElement adultsSelector;
+	
+	public WebElement adultsSelector() {
+		return adultsSelector;
 	}
 	
-	public WebElement getLoginLocator() {
-		return hyperlinkLogin;
+	@FindBy(id="flight-children-hp-flight")
+	private WebElement childrenSelector;
+	
+	public WebElement childrenSelector() {
+		return childrenSelector;
+	}
+	
+	@FindBy(id="flight-age-select-1-hp-flight")
+	private WebElement childOne;
+	
+	public WebElement childOne() {
+		return childOne;
+	}
+	
+	@FindBy(id="flight-age-select-2-hp-flight")
+	private WebElement childTwo;
+	
+	public WebElement childTwo() {
+		return childTwo;
+	}
+	
+	@FindBy(xpath="//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']")
+	private WebElement submitButton;
+	
+	public WebElement submitButton() {
+		return submitButton;
+	}
+	
+	public void waitForElement(WebElement element) {
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+	
+	
 	}
 
-}
