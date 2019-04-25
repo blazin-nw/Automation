@@ -8,6 +8,7 @@
         <methods>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
+          <include name="requiredFieldsValidationOnFlightSearch"/>
           <include name="searchFlight"/>
         </methods>
       </class> <!-- com.automation.app.SearchFlightsTests -->

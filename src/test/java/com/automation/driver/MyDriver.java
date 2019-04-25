@@ -10,7 +10,6 @@ import org.testng.annotations.Parameters;
 public class MyDriver {
 	
 	private WebDriver driver;
-	
 	@Parameters({"browser"})
 	
 	public MyDriver(String browser)
@@ -19,7 +18,6 @@ public class MyDriver {
 		case "Chrome":
 			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Selenium/chromedriver.exe"); 
 			driver = new ChromeDriver();
-			 
 			break;
 		case "Firefox":
 			System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Selenium/geckodriver.exe");

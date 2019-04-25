@@ -113,14 +113,42 @@ public class Home extends BasePage {
 	@FindBy(xpath="//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']")
 	private WebElement submitButton;
 	
+	@FindBy(xpath="//div[@class='autocomplete-dropdown']")
+	private WebElement flyingFromSuggestion;
+	
+	public WebElement flyingFromSuggestion() {
+		return flyingFromSuggestion;
+	}
+	
 	public WebElement submitButton() {
 		return submitButton;
 	}
 	
-	public void waitForElement(WebElement element) {
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+	// Error messages on Search
+	
+	@FindBy(xpath="//h5[@class='alert-title no-outline']")
+	private WebElement errorText;
+	
+	public WebElement errorText() {
+		return errorText;
 	}
+	
+	@FindBy(xpath="//a[contains(text(),'Tell us where you're flying from.')]")
+	private WebElement flyingFromError;
+	
+	public WebElement flyingFromError() {
+		return flyingFromError;
+	}
+	
+	@FindBy(xpath="//a[contains(text(),'Tell us where you're flying to.')]")
+	private WebElement flyingToError;
+	
+	public WebElement flyingToError() {
+		return flyingToError;
+	}
+	
 	
 	
 	}
 
+ 
