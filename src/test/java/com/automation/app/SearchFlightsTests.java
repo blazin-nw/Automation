@@ -8,11 +8,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.pages.app.Home;
-
-import junit.framework.Assert;
 
 public class SearchFlightsTests extends BaseTest {
 	
@@ -25,9 +23,9 @@ public class SearchFlightsTests extends BaseTest {
 		home.submitButton().click();
 		System.out.println(home.flyingFromError().getText());
 		System.out.println(home.flyingToError().getText());
-//		Assert.assertEquals(home.errorText().getText(), "Please correct the errors below.");
-//		Assert.assertEquals(home.flyingFromError().getText(), "Tell us where you're flying from.");
-//		Assert.assertEquals(home.flyingToError().getText(), "Tell us where you're flying to.");
+		Assert.assertEquals(home.errorText().getText(), "Please correct the errors below.");
+		Assert.assertEquals(home.flyingFromError().getText(), "Tell us where you're flying from.");
+		Assert.assertEquals(home.flyingToError().getText(), "Tell us where you're flying to.");
 		myDriver.getDriver().close();
 	}
 	

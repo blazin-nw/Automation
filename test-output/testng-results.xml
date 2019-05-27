@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5480" started-at="2019-05-27T13:04:38Z" finished-at="2019-05-27T13:04:44Z">
+  <suite name="Suite" duration-ms="4658" started-at="2019-05-27T13:08:05Z" finished-at="2019-05-27T13:08:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5480" started-at="2019-05-27T13:04:38Z" finished-at="2019-05-27T13:04:44Z">
+    <test name="Test" duration-ms="4658" started-at="2019-05-27T13:08:05Z" finished-at="2019-05-27T13:08:10Z">
       <class name="com.automation.app.SearchFlightsTests">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="beforeSuite" is-config="true" duration-ms="9303" started-at="2019-05-27T13:04:29Z" finished-at="2019-05-27T13:04:38Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="beforeSuite" is-config="true" duration-ms="10571" started-at="2019-05-27T13:07:55Z" finished-at="2019-05-27T13:08:05Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="requiredFieldsValidationOnFlightSearch()[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="requiredFieldsValidationOnFlightSearch" duration-ms="5470" started-at="2019-05-27T13:04:38Z" finished-at="2019-05-27T13:04:44Z">
+        <test-method status="PASS" signature="requiredFieldsValidationOnFlightSearch()[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="requiredFieldsValidationOnFlightSearch" duration-ms="4647" started-at="2019-05-27T13:08:05Z" finished-at="2019-05-27T13:08:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- requiredFieldsValidationOnFlightSearch -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="afterSuite" is-config="true" duration-ms="760" started-at="2019-05-27T13:04:44Z" finished-at="2019-05-27T13:04:44Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="afterSuite" is-config="true" duration-ms="825" started-at="2019-05-27T13:08:10Z" finished-at="2019-05-27T13:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
