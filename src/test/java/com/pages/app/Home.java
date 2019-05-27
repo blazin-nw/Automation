@@ -133,21 +133,20 @@ public class Home extends BasePage {
 		return errorText;
 	}
 	
-	@FindBy(xpath="//a[contains(text(),'Tell us where you're flying from.')]")
+	//a[contains(text(),\"Tell us where you\'re flying from.\"]
+	@FindBy(xpath="//a[@href='#flight-origin-hp-flight']")
 	private WebElement flyingFromError;
 	
 	public WebElement flyingFromError() {
 		return flyingFromError;
 	}
 	
-	@FindBy(xpath="//a[contains(text(),'Tell us where you're flying to.')]")
+	@FindBy(xpath="//a[@href='#flight-destination-hp-flight']")
 	private WebElement flyingToError;
 	
 	public WebElement flyingToError() {
 		return flyingToError;
 	}
-	
-	
 	
 	}
 
