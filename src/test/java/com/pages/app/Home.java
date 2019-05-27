@@ -113,12 +113,25 @@ public class Home extends BasePage {
 	@FindBy(xpath="//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']")
 	private WebElement submitButton;
 	
+	// Flying from suggestion
+	
 	@FindBy(xpath="//div[@class='autocomplete-dropdown']")
 	private WebElement flyingFromSuggestion;
 	
 	public WebElement flyingFromSuggestion() {
 		return flyingFromSuggestion;
 	}
+	
+	
+	// Flying to suggestion
+	
+	@FindBy(xpath="//a[@data-value='Naples, Italy (NAP-Naples Intl.)']")
+	private WebElement flyingToSuggestion;
+	
+	public WebElement flyingToSuggestion() {
+		return flyingToSuggestion;
+	}
+	
 	
 	public WebElement submitButton() {
 		return submitButton;

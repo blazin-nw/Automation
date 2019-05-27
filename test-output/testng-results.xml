@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="4658" started-at="2019-05-27T13:08:05Z" finished-at="2019-05-27T13:08:10Z">
+  <suite name="Suite" duration-ms="15423" started-at="2019-05-27T14:51:24Z" finished-at="2019-05-27T14:51:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4658" started-at="2019-05-27T13:08:05Z" finished-at="2019-05-27T13:08:10Z">
+    <test name="Test" duration-ms="15423" started-at="2019-05-27T14:51:24Z" finished-at="2019-05-27T14:51:40Z">
       <class name="com.automation.app.SearchFlightsTests">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="beforeSuite" is-config="true" duration-ms="10571" started-at="2019-05-27T13:07:55Z" finished-at="2019-05-27T13:08:05Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.app.SearchFlightsTests@5c3bd550]" name="beforeSuite" is-config="true" duration-ms="10270" started-at="2019-05-27T14:51:14Z" finished-at="2019-05-27T14:51:24Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="requiredFieldsValidationOnFlightSearch()[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="requiredFieldsValidationOnFlightSearch" duration-ms="4647" started-at="2019-05-27T13:08:05Z" finished-at="2019-05-27T13:08:10Z">
+        <test-method status="PASS" signature="searchFlight()[pri:0, instance:com.automation.app.SearchFlightsTests@5c3bd550]" name="searchFlight" duration-ms="15413" started-at="2019-05-27T14:51:24Z" finished-at="2019-05-27T14:51:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- requiredFieldsValidationOnFlightSearch -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.app.SearchFlightsTests@6f7fd0e6]" name="afterSuite" is-config="true" duration-ms="825" started-at="2019-05-27T13:08:10Z" finished-at="2019-05-27T13:08:11Z">
+        </test-method> <!-- searchFlight -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.app.SearchFlightsTests@5c3bd550]" name="afterSuite" is-config="true" duration-ms="2507" started-at="2019-05-27T14:51:40Z" finished-at="2019-05-27T14:51:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

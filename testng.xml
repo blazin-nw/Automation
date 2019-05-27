@@ -7,7 +7,7 @@
 <!--       <class name="com.automation.app.SignupTests"/>  -->
       <class name="com.automation.app.SearchFlightsTests">
        <methods>
-        <include name="requiredFieldsValidationOnFlightSearch" />
+        <include name="searchFlight" />
       </methods>
       </class>
     </classes>
